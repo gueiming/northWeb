@@ -1,0 +1,409 @@
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+	margin: 0;
+	outline: none;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(250, 250, 250); 
+}
+
+.header {
+	background-color: #06093e;/*rgb(247 227 128);*/
+	border: 0px solid blue;
+	height: 80px;
+	text-align: center;
+
+}
+
+.header img {
+	border: 0px solid white;
+	float: left;
+	height: 80px;
+	margin: 0 0 0 20px;
+}
+
+.header a {
+	border: 2px solid white;
+	border-radius: 20px;
+	color: white;
+	float: right;
+	font-weight: 600;
+	padding: 7px 20px;
+	position: relative;
+	/*height: 80px;*/
+	margin-right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+	text-decoration: none;
+}
+
+.header a:hover {
+	color: #F77C00;
+	border: 2px solid #F77C00;
+}
+
+.header h1 {
+	border: 0px solid white;
+	color: #F77C00;
+	position: absolute;
+	right: 50%;
+	transform: translateX(50%);
+	font-weight: 600;
+	letter-spacing: 3px;
+	line-height: 60px;
+	padding: 10px;
+}
+
+.container {
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0 0 8px lightgray;
+	width: 480px;
+	margin: 20px auto;
+	padding: 5px 20px 30px; 
+}
+
+.container.admin-investi-width {
+	width: 600px;
+}
+
+.container.admin-honor-width {
+	width: 640px;
+}
+
+.title {
+	border: 0px solid red;
+	border-bottom: 1.5px solid silver;
+	letter-spacing: 2px;
+	margin: 0 auto 10px;
+	text-align: center;
+	width: 100%;
+}
+
+.title.noborder {
+	border: none;
+}
+
+.title h2 {
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 75px;
+	height: 80px;
+}
+
+.title a {
+	/*border: 1px solid blue;*/
+	color: silver;
+	float: left;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+    margin-top: -20px;
+}
+
+.title a:nth-child(3) {
+	float: right;
+}
+
+.title a:hover {
+	color: #FCAD0F;
+}
+
+.del-conf img {
+	border: 1px solid blue;
+	margin-top: 20px;
+	width: 300px;
+}
+
+.item {
+	border: 0px solid blue;
+	padding: 8px 0;
+	width: 100%;
+}
+
+.item img {
+	border: 0px solid blue;
+	display: inline-block;
+	float: right;
+	height: 18px;
+	margin: 2px 4px 0 0; 
+}
+
+.item img:hover {
+	cursor: pointer;
+}
+
+.readLess {
+	border: 0px solid blue;
+	display: inline-block;
+	text-align: justify;
+	overflow:hidden;
+	white-space: nowrap;
+	width: 50%;
+}
+
+.readLess button {
+	background: linear-gradient(to right, rgba(255,255,255,0.4) 0%, #fff 25%);
+	border: 0px solid blue;
+	color: silver;
+	cursor: pointer;
+	height: 25px;
+	padding-left: 15px;
+	position: relative;
+	float: right;
+	z-index: 0;
+}
+
+.readMore {
+	border: 0px solid red;
+	overflow: hidden;
+	display: inline-block;
+	text-align: justify;
+	overflow:hidden;
+	width: 50%;
+}
+
+.readMore button {
+	background-color: #fff;
+	border: 0px solid blue;
+	color: silver;
+	cursor: pointer;
+	height: 25px;
+}
+
+.readLess button:hover, 
+.readMore button:hover {
+	color: #FCAD0F;
+}
+
+/**********<start>*************/
+
+.img-modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.img-modal .container {
+	background: #fff;
+	border-radius: 0;
+	box-shadow: none;
+	height: 290px;
+	padding: 10px 20px;
+	margin-top: 10%;
+	text-align: center;
+}
+
+.img-modal img {
+	height: 100%;
+	max-width: 90%;
+}
+
+.close {
+	height: 15px;
+	float: right;
+	cursor: pointer;
+}
+
+
+/**********<end>*************/
+
+.time {
+	border: 0px solid blue;
+	display: inline-block;
+	float: right;
+	font-size: 14px;
+	padding: 3px 0;
+	text-align: right;
+	width: 23%;
+}
+
+.time.admin-honor-width {
+	width: 20%;
+}
+
+.btn {
+	border: 0px solid blue;
+	width: 27%;
+	position: relative;
+	float: right;
+}
+
+.btn.admin-honor-width {
+	width: 23.75%;
+}
+
+.btn button {
+	background-color: #fff;
+	border: 2px solid #003885;
+	border-radius: 20px;
+	color: #383200;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	font-size: 16px;
+	height: 25px;
+	margin:-2% 0 0 5%;
+	width: 42%;
+}
+
+
+.btn button:hover {
+	background-color: #003885;
+	color: #fff;
+}
+
+.btn button:nth-child(1) {
+	border: 2px solid #B3000C;
+}
+
+.btn button:nth-child(1):hover {
+	background: #B3000C;
+}
+
+.content-center {
+	border: 0px solid red;
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+}
+
+.content-center button {
+	background-color: #fff; 
+	border: 3px solid #003885;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 18px;
+	height: 40px;
+	width: 80%;
+	margin: 30px 0 10px;
+}
+
+.content-center button:hover {
+	background: #003885;
+	color: #fff;
+}
+
+.content-center.mart-10 button {
+	margin-top: 10px;
+} 
+
+.content-center.del button {
+	border-color: rgb(180 0 12);
+}
+
+.content-center.del button:hover {
+	background: rgb(180 0 12);
+}
+
+.content-center h3 {
+	color: #21C700;
+	font-size: 22px;
+	font-weight: 400;
+	padding: 10px 0 10px;
+}
+
+.content-center input {
+	border: none;
+	border-bottom: 1px silver solid;
+	font-size: 16px;
+	height: 40px;
+	width: 85%;
+	padding-left: 8px;
+	margin: 0;
+}
+
+.content-center input:focus {
+	border-bottom: 1.8px solid rgb(246, 96, 171);
+	height: 40px;
+  	transition: 0.1s;
+	width: 85%;
+}
+
+.content-center input[type='file'] {
+	border: none;
+	height: 100%;
+	width: 100%;
+}
+
+.content-center span {
+	margin: 6px 0;
+	float: left;
+}
+
+.content-center.del p {
+	border: 0px solid red;
+	text-align: justify;
+	margin-top: 20px;
+}
+
+.content-center textarea {
+	border: 1px solid silver;
+	resize: none;
+	height: 75px;
+	width:  100%;
+	overflow: hidden;
+}
+
+.login {
+	border: 0px solid red;
+	margin: 10px auto;
+	width: 80%;
+}
+
+.login img {
+	width: 40px;
+	position: relative;
+	float: left;
+}
+
+.login-back a {
+	color: silver;
+	float: right;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 10px 0 0 0;
+}
+
+.login-back a:hover {
+	color: #FCAD0F;
+}
+
+.radio-item {
+	border: 0px solid blue;
+	font-size: 16px;
+	height: 28px;
+	margin: auto;
+	width: 80%;
+	text-align: left;
+}
+
+.radio-item input[type='radio'] {
+	height: 15px;
+	margin-top: -40px;
+  	vertical-align: middle;
+}
+
+.error {
+	/*border: 1px solid blue;*/
+	background: #FFC1E0;
+	color: #FF2929;
+	margin: auto;
+	padding: 5px;
+	width: 100%;
+}
+
+.footer {
+	color: silver;
+	text-align: center;
+}

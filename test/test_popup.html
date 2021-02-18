@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- header -->
+<head>
+	<meta name="description" content="礆𣈯㟻坎脲䲮㨩拎号藆">
+	<meta name="keywords" content="噼銫喃斐 1,噼銫喃斐 2">
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+	<meta http-equiv="Content-Language" content="zh-TW">
+	<meta http-equiv="Refresh" content="time">
+	<link href="../css/style.css" rel="stylesheet" type="text/css" />
+
+<!-- 	<script type="text/javascript">
+
+	document.getElementById("open").addEventListener("click", 
+ 		function {
+			document.querySelector("#popUp").style.display = "inline";
+		})
+
+	document.getElementById("close").addEventListener("click", 
+ 		function {
+ 			document.querySelector("#popUp").style.display = "none";
+		})
+</script> -->
+<script type="text/javascript">
+
+	function open() {
+		document.getElementById("popUp").style.display = "";
+	}	
+
+	function close() {
+		document.getElementById("popUp").style.display = "none";
+	}
+</script>
+</head>
+
+
+<body>
+<div class="header">
+	<h1>Modifying Page</h1>
+</div>
+<div class="container-admin">
+	<div class="title">Data list</div>
+	<div class="content-center">
+		<button id="open" onclick="open()">Submit</button>
+	</div>
+</div>
+
+<div id="popUp" class="pop-up">
+	<div class="popup-content">
+		<img id="close" src="../img/icon-close.svg" onclick="close()">
+		<form action="./modifying.php" method="POST">
+			<div class="title">Modify data</div>
+			<textarea></textarea>
+			<div class="content-center">
+				<button type="#" >Submit</button>
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>

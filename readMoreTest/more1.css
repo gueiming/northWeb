@@ -1,0 +1,141 @@
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+	margin: 0;
+	outline: none;
+	padding: 0;
+}
+
+
+.header {
+	background-color: rgb(255, 255, 229);
+	border: 0px solid blue;
+	height: 60px;
+	text-align: center;
+
+}
+
+.header h1 {
+	font-weight: 600;
+	letter-spacing: 3px;
+	line-height: 60px;
+}
+
+.container {
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0 0 8px lightgray;
+	width: 500px;
+	margin: 20px auto;
+	padding-bottom: 30px; 
+}
+
+.container .title {
+	border-bottom: 1.5px solid silver;
+	font-size: 28px;
+	font-weight: 500;
+	height: 70px;
+	line-height: 70px;
+	letter-spacing: 2px;
+	margin: 0 auto 15px;
+	text-align: center;
+	width: 85%;
+}
+
+.readLess {
+	border: 0px solid blue;
+	height: 45px;
+	display: inline-block;
+	/*overflow: hidden;*/
+	padding: 10px 0px 10px 35px;
+	text-align: justify;
+	overflow:hidden;
+	white-space: nowrap;
+	width: 80%;
+}
+
+.readLess button {
+	background: linear-gradient(to right, rgba(255,255,255,0.4) 0%, #fff 25%);
+	border: 0px solid blue;
+	color: silver;
+	cursor: pointer;
+	height: 25px;
+	padding-left: 15px;
+	position: relative;
+	float: right;
+	z-index: 1;
+}
+
+.readLess button:hover {
+	color: #ea61cb;
+}
+
+.readMore {
+	border: 1px solid blue;
+	overflow: hidden;
+	display: inline-block;
+	padding: 10px 10px 10px 35px;
+	text-align: justify;
+	overflow:hidden;
+	width: 80%;
+}
+
+.readMore button {
+	background-color: #fff;
+	border: 0px solid blue;
+	color: silver;
+	cursor: pointer;
+	height: 25px;
+}
+
+.readMore button:hover {
+	color: #ea61cb;
+}
+
+.btn {
+	border: 0px solid blue;
+	height: 45px;
+	width: 20%;
+	position: relative;
+	float: right;
+}
+
+.btn button {
+	background-color: rgb(156, 220, 232);
+	border: 0px solid blue;
+	border-radius: 20px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	margin-left: 8px;
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+	height: 30px;
+	width: 90%;
+}
+
+.container .item button {
+	background-color: rgb(156, 220, 232);
+	border: 1px solid blue;
+	border-radius: 15px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	height: 30px;
+	width: 40%;
+/*vertical-alignment center*/
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+/*	float: right;
+	margin-right: 25px;*/
+  	
+}
+
+
+
+.footer {
+	color: silver;
+	text-align: center;
+}

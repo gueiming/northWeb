@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- header -->
+<head>
+	<meta name="keywords" content="𣈯枤摮 1,𣈯枤摮 2">
+	<meta http-equiv="Content-Type" content="text/html"; charset="Utf-8">
+	<meta http-equiv="Content-Language" content="zh-TW">
+	<meta http-equiv="Refresh" content="time">
+	<link href="more1.css" rel="stylesheet" type="text/css" />
+<!-- 	<script> 
+		let flag = 0;
+
+		function flip(flag) {
+	    	flag = Math.abs(flag - 1);
+	    	return flag
+	    }
+
+	  	function setClass(className) { 
+	        if (flag == 0) {
+		    	document.getElementById( "moreOrLess" ).className = "readMore";
+		    	document.getElementById("more").style = "display: none;"
+		    	document.getElementById("less").style = "display: inline;"
+		    	return flag = flip(flag);
+		    } else {
+		    	document.getElementById( "moreOrLess" ).className = "readLess";
+		    	document.getElementById("less").style = "display: none;"
+		    	document.getElementById("more").style = "display: inline;"
+		    	return flag = flip(flag);
+		    }
+	    }
+	</script> -->
+<script> 
+
+  	function setMore(event_id) { 
+
+    	document.getElementById( "moreOrLess" +  event_id).className = "readMore";
+
+    	document.getElementById("more" + event_id).style = "display: none;";
+    	document.getElementById("less" + event_id).style = "display: inline;";
+    }
+
+    function setLess(event_id) { 
+
+    	document.getElementById( "moreOrLess" +  event_id ).className = "readLess";
+
+    	document.getElementById("less" + event_id).style = "display: none;";
+    	document.getElementById("more" + event_id).style = "display: inline;";
+    }
+</script>
+</head>
+
+
+<body>
+	<div class="header">
+		<h1>Read more test</h1>
+	</div>
+	<div class="container">
+		<div class="title">Data list</div>
+<!-- 		<div class="readLess" id="moreOrLess">
+			<button id="more" onclick="setClass()">...More</button>
+			<p>馬斯克說，一般而言，當他在應付難題時特別強調兩個面向，並點出幾個其他的重要關鍵來說明他的創業成就。第一點：他相信要回歸「第一原理思維」去找出更好的解決方案。這表示，不管面對任何難題，都要體認到當中有一些已存在多年的既有假設，決定了哪些可以改變、哪些又是必須接受的現實。
+			<button id="less" onclick="setClass()" style="display: none;">...Less</button>
+			</p>
+			
+		</div> -->
+		<div class="readLess" id="moreOrLess1">
+			<button id="more1" onclick="setMore(1)">...More</button>
+			<p>馬斯克說，一般而言，當他在應付難題時特別強調兩個面向，並點出幾個其他的重要關鍵來說明他的創業成就。第一點：他相信要回歸「第一原理思維」去找出更好的解決方案。這表示，不管面對任何難題，都要體認到當中有一些已存在多年的既有假設，決定了哪些可以改變、哪些又是必須接受的現實。
+			<button id="less1" onclick="setLess(1)" style="display: none;">...Less</button>
+			</p>
+		</div>
+		<div class="btn">
+			<button type="submit">Modify</button>
+		</div>
+
+		<div class="readLess" id="moreOrLess2">
+			<button id="more2" onclick="setMore(2)">...More</button>
+			<p>馬斯克說，一般而言，當他在應付難題時特別強調兩個面向，並點出幾個其他的重要關鍵來說明他的創業成就。第一點：他相信要回歸「第一原理思維」去找出更好的解決方案。這表示，不管面對任何難題，都要體認到當中有一些已存在多年的既有假設，決定了哪些可以改變、哪些又是必須接受的現實。
+			<button id="less2" onclick="setLess(2)" style="display: none;">...Less</button>
+			</p>
+		</div>
+		<div class="btn">
+			<button type="submit">Modify</button>
+		</div>
+	</div>
+</body>
+</html>
